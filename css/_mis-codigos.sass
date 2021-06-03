@@ -1,0 +1,173 @@
+
+.mis-codigos
+    border: 2px solid red
+    background-color: black
+    display: flex
+    flex-direction: row
+    align-items: center
+    background-image: url("../img/back-registro.png")
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+    color: white
+    font-size: 21px
+    height: 100vh
+    padding-top: 30vh
+    p.tratamiento
+        width: 20vw
+.mis-codigos
+    justify-content: center
+    .box1
+        border: 2px solid blue
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 50vw
+        padding: 6% 0
+        p
+            font-family: compact
+            font-size: 42px
+        table
+            width: 100%
+            font-family: arial
+            thead
+                th
+                    margin-bottom: 30px
+                    font-family: amsi
+                    font-size: 37px
+            tbody
+                text-align: center
+        .back-iniciar-mobile
+            display: none
+            .btn-ingreso
+                font-family: compact
+                padding: 6px 44px
+                font-size: 1.8em
+                margin-bottom: 25px
+                outline: none
+                border: none
+                border-radius: 33px
+                background-color: white
+                cursor: pointer
+                color: #DE0613
+        .div-linea
+            border: 2px solid white
+            border-radius: 5
+            width: 4px
+            height: 25px
+            margin-bottom: 18px
+        .btn-registro
+            color: white
+            padding: 30px 60px
+            outline: none
+            border: none
+            cursor: pointer
+            padding: 5px 29px
+            font-family: compact
+            border-radius: 160px
+            font-size: 1.3em
+            background: rgb(155,0,10)
+            background: linear-gradient(0deg, rgba(155,0,10,1) 18%, rgba(222,4,17,1) 81%)
+        .btn-registro:hover
+            color: #FFDB06
+    .box2
+        border: 2px solid yellow
+        width: 20vw
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+
+@media screen and ( min-width: 1648px)
+    .mis-codigos
+        height: auto
+        .box1
+            .div-linea
+                height: 28px
+
+@media screen and ( max-width: 1318px)
+    .mis-codigos
+        height: auto
+        font-size: 15px
+@media screen and ( max-width: 1168px)
+    .mis-codigos
+        font-size: 12px
+        padding-top: 5vh
+        .box1
+            form
+                .btn-ingreso
+                    padding-bottom: 0px
+                ul
+                    label
+                        font-size: 25px
+                    input[type=submit]
+                        font-size: 1.8rem
+@media screen and ( max-width: 987px)
+    .mis-codigos
+        height: auto
+        font-size: 11px
+        padding-top: 15vh
+        .box1
+            padding-top: 2%
+            width: 100vw
+            .div-linea
+                height: 35px
+
+            form
+                ul
+                    width: 90vw
+                    justify-content: center
+                    li
+                        width: 100%
+                    li#li_10
+                        width: 100%
+                        display: flex
+                        flex-direction: column
+                        div
+                            margin-bottom: 14px
+
+@media screen and ( max-width: 647px)
+    .mis-codigos
+        background-size: 195px 219px
+        background-position: -20px 442px
+        background-image: url("../img/mascara.png")
+        .box1
+            padding-top: 6vh
+            width: 100vw
+            .back-iniciar-mobile
+                width: 100%
+                display: block
+            p
+                font-size: 28px
+                margin-bottom: 15px
+            form
+                .input-ingreso
+                    height: 37px
+                    padding: 0 30px
+                    padding-bottom: 4px
+                .btn-ingreso
+                    height: 37px
+                ul
+                    label
+                        line-height: 20px
+                    li
+                        margin-bottom: 9px
+                    input
+                        font-size: 1.5em
+                        height: 40px
+                        padding: 0 19px
+            .div-linea
+                margin-bottom: 20px
+            .btn-registro
+                font-size: 1.9em
+
+
+@media screen and ( max-width: 500px)
+    .mis-codigos
+        background-size: 0
+        background-position: -20px 452px
+        padding-top: 7vh
+        .box1
+            .img-quedan
+                width: 70%

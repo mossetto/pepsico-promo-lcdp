@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+    <div class="header">
+        <span class="btn-menu" id="btn-menu"></span>
+        <span class="icon-mask"></span>
+        <nav>
+            <ul class="menu" id="menu">
+                <h3 class="el-botin">EL BOTÍN<br><span class="monto-menu">MÁS BUSCADO</span></h3>
+                <li><img class="" src="../img/autoriza.png" alt=""></li>
+                <li><img class="logo-nav" src="../img/margarita-detodito.png" alt=""></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#home">¿CÓMO PARTICIPAR?</a></li>
+                <li><a href="#home">MIS CÓDIGOS</a></li>
+                <li><a href="#home">GANADORES</a></li>
+                <li><a href="#term">TÉRMINOS Y CONDICIONES</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+                <li><a href="#faq">PREGUNTAS FRECUENTES</a></li>
+                <span class="btn-cerrar-menu" id="btn-cerrar-menu">X</span>
+                <li><img class="" src="../img/coljuegos.png" alt=""></li>
+            </ul>
+        </nav>
+    </div>
+
+<div class="mis-codigos">
+
+    <div class="box1">
+            <p>Lucas Maldonado</p>
+            <table >
+              <colgroup>
+              <col>
+              <col>
+              <col>
+              <col>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>FECHA</th>
+                  <th>CÓDIGO</th>
+                  <th>MONTO</th>
+                  <th>ACUMULADO</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10/10/2020</td>
+                  <td>A1W2F5W4</td>
+                  <td>$50</td>
+                  <td>$50</td>
+                </tr>
+                <tr>
+                  <td>10/10/2020</td>
+                  <td>A1W2F5W4</td>
+                  <td>$50</td>
+                  <td>$50</td>
+                </tr>
+                <tr>
+                  <td>10/10/2020</td>
+                  <td>A1W2F5W4</td>
+                  <td>$50</td>
+                  <td>$50</td>
+                </tr>
+                <tr>
+                  <td>10/10/2020</td>
+                  <td>A1W2F5W4</td>
+                  <td>$50</td>
+                  <td>$50</td>
+                </tr>
+                <tr>
+                  <td>10/10/2020</td>
+                  <td>A1W2F5W4</td>
+                  <td>$50</td>
+                  <td>$50</td>
+                </tr>
+                <tr>
+                  <td>10/10/2020</td>
+                  <td>A1W2F5W4</td>
+                  <td>$50</td>
+                  <td>$50</td>
+                </tr>
+                <tr>
+                  <td>10/10/2020</td>
+                  <td>A1W2F5W4</td>
+                  <td>$50</td>
+                  <td>$50</td>
+                </tr>
+                <tr>
+                  <td>10/10/2020</td>
+                  <td>A1W2F5W4</td>
+                  <td>$50</td>
+                  <td>$50</td>
+                </tr>
+                <tr>
+                  <td>10/10/2020</td>
+                  <td>A1W2F5W4</td>
+                  <td>$50</td>
+                  <td>$50</td>
+                </tr>
+                <tr>
+                  <td>10/10/2020</td>
+                  <td>A1W2F5W4</td>
+                  <td>$50</td>
+                  <td>$50</td>
+                </tr>
+
+              </tbody>
+              </table>
+          </div>
+          <hr class="separador1"></hr>
+          <div class="box2">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <button class="boton-canjear" style="background-image: url(img/backcanjear-mp.png);">CANJEAR</button>
+          </div>
+          
+        </div>
+        <span class="aclaracion-canjear"> -AL ACUMULAR $50 DEBERÁS HACER UN CANJE -</span>
+
+
+</div>
+
+        
+<!-- script menu -->
+<script>
+
+    document.getElementById("btn-menu").addEventListener("click", desplegarMenu);
+    document.getElementById("btn-cerrar-menu").addEventListener("click", ocultarMenu);
+
+    function desplegarMenu(){
+        document.getElementById("menu").style.display = "block";
+    }
+    function ocultarMenu(){
+        document.getElementById("menu").style.display = "none";
+    }
+
+
+</script>
+</body>
+</html>

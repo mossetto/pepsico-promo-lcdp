@@ -1695,6 +1695,164 @@ body {
     padding-top: 7vh; }
     .registros .box1 .img-quedan {
       width: 70%; } }
+.mis-codigos {
+  border: 2px solid red;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: url("../img/back-registro.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 21px;
+  height: 100vh;
+  padding-top: 30vh; }
+  .mis-codigos p.tratamiento {
+    width: 20vw; }
+
+.mis-codigos {
+  justify-content: center; }
+  .mis-codigos .box1 {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    padding: 6% 0; }
+    .mis-codigos .box1 p {
+      font-family: compact;
+      font-size: 42px; }
+    .mis-codigos .box1 table {
+      width: 100%;
+      font-family: arial; }
+      .mis-codigos .box1 table thead th {
+        margin-bottom: 30px;
+        font-family: amsi;
+        font-size: 37px; }
+      .mis-codigos .box1 table tbody {
+        text-align: center; }
+    .mis-codigos .box1 .back-iniciar-mobile {
+      display: none; }
+      .mis-codigos .box1 .back-iniciar-mobile .btn-ingreso {
+        font-family: compact;
+        padding: 6px 44px;
+        font-size: 1.8em;
+        margin-bottom: 25px;
+        outline: none;
+        border: none;
+        border-radius: 33px;
+        background-color: white;
+        cursor: pointer;
+        color: #DE0613; }
+    .mis-codigos .box1 .div-linea {
+      border: 2px solid white;
+      border-radius: 5;
+      width: 4px;
+      height: 25px;
+      margin-bottom: 18px; }
+    .mis-codigos .box1 .btn-registro {
+      color: white;
+      padding: 30px 60px;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      padding: 5px 29px;
+      font-family: compact;
+      border-radius: 160px;
+      font-size: 1.3em;
+      background: #9b000a;
+      background: linear-gradient(0deg, #9b000a 18%, #de0411 81%); }
+    .mis-codigos .box1 .btn-registro:hover {
+      color: #FFDB06; }
+  .mis-codigos .box2 {
+    border: 2px solid yellow;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+@media screen and (min-width: 1648px) {
+  .mis-codigos {
+    height: auto; }
+    .mis-codigos .box1 .div-linea {
+      height: 28px; } }
+@media screen and (max-width: 1318px) {
+  .mis-codigos {
+    height: auto;
+    font-size: 15px; } }
+@media screen and (max-width: 1168px) {
+  .mis-codigos {
+    font-size: 12px;
+    padding-top: 5vh; }
+    .mis-codigos .box1 form .btn-ingreso {
+      padding-bottom: 0px; }
+    .mis-codigos .box1 form ul label {
+      font-size: 25px; }
+    .mis-codigos .box1 form ul input[type=submit] {
+      font-size: 1.8rem; } }
+@media screen and (max-width: 987px) {
+  .mis-codigos {
+    height: auto;
+    font-size: 11px;
+    padding-top: 15vh; }
+    .mis-codigos .box1 {
+      padding-top: 2%;
+      width: 100vw; }
+      .mis-codigos .box1 .div-linea {
+        height: 35px; }
+      .mis-codigos .box1 form ul {
+        width: 90vw;
+        justify-content: center; }
+        .mis-codigos .box1 form ul li {
+          width: 100%; }
+        .mis-codigos .box1 form ul li#li_10 {
+          width: 100%;
+          display: flex;
+          flex-direction: column; }
+          .mis-codigos .box1 form ul li#li_10 div {
+            margin-bottom: 14px; } }
+@media screen and (max-width: 647px) {
+  .mis-codigos {
+    background-size: 195px 219px;
+    background-position: -20px 442px;
+    background-image: url("../img/mascara.png"); }
+    .mis-codigos .box1 {
+      padding-top: 6vh;
+      width: 100vw; }
+      .mis-codigos .box1 .back-iniciar-mobile {
+        width: 100%;
+        display: block; }
+      .mis-codigos .box1 p {
+        font-size: 28px;
+        margin-bottom: 15px; }
+      .mis-codigos .box1 form .input-ingreso {
+        height: 37px;
+        padding: 0 30px;
+        padding-bottom: 4px; }
+      .mis-codigos .box1 form .btn-ingreso {
+        height: 37px; }
+      .mis-codigos .box1 form ul label {
+        line-height: 20px; }
+      .mis-codigos .box1 form ul li {
+        margin-bottom: 9px; }
+      .mis-codigos .box1 form ul input {
+        font-size: 1.5em;
+        height: 40px;
+        padding: 0 19px; }
+      .mis-codigos .box1 .div-linea {
+        margin-bottom: 20px; }
+      .mis-codigos .box1 .btn-registro {
+        font-size: 1.9em; } }
+@media screen and (max-width: 500px) {
+  .mis-codigos {
+    background-size: 0;
+    background-position: -20px 452px;
+    padding-top: 7vh; }
+    .mis-codigos .box1 .img-quedan {
+      width: 70%; } }
 @font-face {
   font-family: "amsi";
   src: url("../fonts/amsi.ttf"); }
