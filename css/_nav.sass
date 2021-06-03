@@ -1,0 +1,116 @@
+.header
+    height: 13vh
+    background-image: url("../img/back-nav.png")
+    background-size: 100% 100%
+    background-position: bottom
+    background-repeat: no-repeat
+    position: fixed
+    width: 100%
+    z-index: 3
+    margin-top: -2px
+    nav
+        width: 100%
+        // margin-top: 20px
+        display: flex
+        justify-content: center
+        align-items: center
+        ul
+            display: flex
+            flex-direction: row
+            align-items: center
+            .el-botin
+                display: none
+                font-family: compact
+                font-weight: normal
+                font-size: 36px
+                line-height: 42px
+                .monto-menu
+                    color: white
+                    font-size: 52px
+            .btn-cerrar-menu
+                display: none
+                position: absolute
+                right: 40px
+                top: 15px
+                font-family: amsi
+                font-size: 30px
+                cursor: pointer
+            li
+                list-style: none
+                a
+                    display: inline-block
+                    color: white
+                    margin: 0 5px
+                    padding: 10px 10px
+                    font-family: amsi
+                    font-size: 1.7em
+                    text-decoration: none
+                a:hover
+                    color: red
+                img
+                    height: 53px
+                    margin: 7px 20px
+                img.logo-nav
+                    height: 83px
+
+    .btn-menu
+        display: none
+    .icon-mask
+        display: none
+
+                
+@media screen and ( max-width: 1708px)
+    .header nav ul li a
+        padding: 10px 4px
+        font-size: 1.1em
+    .header nav ul li img
+        height: 46px
+        margin: 0px 20px
+
+
+
+@media screen and ( max-width: 1212px)
+    .header
+        height: 12vh
+        background-size: cover
+        .btn-menu
+            display: block
+            position: absolute
+            right: 80px
+            top: 6px
+            height: 38px
+            width: 38px
+            background-image: url("../img/menu.png")
+            background-size: contain
+            background-position: bottom
+            background-repeat: no-repeat
+        .icon-mask
+            display: block
+            background-image: url("../img/coljuegos.png")
+            background-size: cover
+            background-position: bottom
+            background-repeat: no-repeat
+            height: 35px
+            width: 35px
+            position: absolute
+            right: 20px
+            top: 11px
+        nav
+            ul
+                display: none
+                background-color: #1a4080
+                z-index: 2
+                width: 100%
+                text-align: center
+                padding: 40px 0
+                .btn-cerrar-menu
+                    display: block
+                    color: white
+                .el-botin
+                    display: block
+                    color: white
+                li
+                    a
+                        font-size: 1.5em
+                        padding: 3px 10px
+

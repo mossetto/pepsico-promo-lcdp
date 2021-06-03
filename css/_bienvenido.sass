@@ -1,0 +1,168 @@
+
+.bienvenido
+    background-color: black
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    background-image: url("../img/back-bienvenido.png")
+    background-size: 100vw
+    background-position: 0 140px
+    background-repeat: no-repeat
+    color: white
+    font-size: 21px
+    height: 100vh
+    padding-top: 13vh
+
+.bienvenido .box1
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 60vw
+    padding: 6% 0
+    .img-quedan
+        width: 59%
+    p
+        font-size: 6em
+        margin-bottom: 50px
+        color: #FFDB06
+        font-family: compact
+    h2
+        font-family: amsi
+        font-size: 40px
+        margin: 50px 0
+        text-align: center
+    .back-iniciar-mobile
+        display: none
+    form
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        .input-ingreso
+            font-family: amsi
+            margin-bottom: 12px
+            font-size: 1.5em
+            padding: 0 50px
+            padding-bottom: 10px
+            height: 50px
+            text-align: center
+            outline: none
+            border-radius: 50px
+            border: none
+            background-color: white
+        .captcha
+            background-color: white
+            color: grey
+            padding: 25px 80px
+            margin-bottom: 25px
+        .btn-ingreso
+            font-family: compact
+            padding: 6px 44px
+            font-size: 1.8em
+            margin-bottom: 25px
+            outline: none
+            border: none
+            border-radius: 33px
+            background-color: white
+            cursor: pointer
+            color: #DE0613
+    .div-linea
+        border: 2px solid white
+        border-radius: 5
+        width: 4px
+        height: 25px
+        margin-bottom: 18px
+    .btn-registro
+        color: white
+        padding: 30px 60px
+        outline: none
+        border: none
+        cursor: pointer
+        padding: 5px 29px
+        font-family: compact
+        border-radius: 160px
+        font-size: 1.3em
+        background: rgb(155,0,10)
+        background: linear-gradient(0deg, rgba(155,0,10,1) 18%, rgba(222,4,17,1) 81%)
+        a
+            text-decoration: none
+            color: white
+    .btn-registro:hover
+        color: #FFDB06
+
+.bienvenido .box2
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 40vw
+
+@media screen and ( min-width: 1648px)
+    .bienvenido
+        height: auto
+        .box1
+            .div-linea
+                height: 28px
+
+@media screen and ( max-width: 1318px)
+    .bienvenido
+        height: auto
+        font-size: 15px
+@media screen and ( max-width: 1168px)
+    .bienvenido
+        font-size: 12px
+        .box1
+            form
+                .btn-ingreso
+                    padding-bottom: 0px
+
+@media screen and ( max-width: 987px)
+    .bienvenido
+        height: auto
+        font-size: 11px
+        .box1
+            padding-top: 2%
+            width: 68vw
+            .div-linea
+                height: 35px
+
+        .box2
+            width: 32vw
+
+@media screen and ( max-width: 647px)
+    .bienvenido
+        background-size: 195px 219px
+        background-position: -20px 442px
+        background-image: url("../img/mascara.png")
+        .box1
+            width: 100vw
+            .back-iniciar-mobile
+                width: 100%
+                display: block
+            p
+                font-size: 81px
+                margin-bottom: 15px
+            form
+                .input-ingreso
+                    height: 37px
+                    padding: 0 30px
+                    padding-bottom: 4px
+                .btn-ingreso
+                    height: 37px
+            .div-linea
+                margin-bottom: 20px
+            .btn-registro
+                font-size: 1.9em
+
+
+
+        .box2
+            width: 0vw
+@media screen and ( max-width: 500px)
+    .bienvenido
+        background-size: 170px 190px
+        background-position: -20px 415px
+        padding-top: 14vh
+        .box1
+            .img-quedan
+                width: 70%

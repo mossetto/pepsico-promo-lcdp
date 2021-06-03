@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+<div class="header">
+    <span class="btn-menu" id="btn-menu"></span>
+    <span class="icon-mask"></span>
+    <nav>
+        <ul class="menu" id="menu">
+            <h3 class="el-botin">EL BOTÍN<br><span class="monto-menu">MÁS BUSCADO</span></h3>
+            <li><img class="" src="../img/autoriza.png" alt=""></li>
+            <li><img class="logo-nav" src="../img/margarita-detodito.png" alt=""></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#home">¿CÓMO PARTICIPAR?</a></li>
+            <li><a href="#home">MIS CÓDIGOS</a></li>
+            <li><a href="#home">GANADORES</a></li>
+            <li><a href="#term">TÉRMINOS Y CONDICIONES</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#faq">PREGUNTAS FRECUENTES</a></li>
+            <span class="btn-cerrar-menu" id="btn-cerrar-menu">X</span>
+            <li><img class="" src="../img/coljuegos.png" alt=""></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="bienvenido">
+    <div class="box1">
+        <!-- <img class="back-iniciar-mobile" src="../img/back-iniciar-mobile.png" alt=""> -->
+        
+        <p class="delay1">BIENVENIDO</p>
+        <img class="img-quedan delay2" src="../img/quedan.png" alt="">
+        <h2 class="delay3">INGRESA EL CÓDIGO DE TU TIRILLA</h2>
+        <form  class="delay4" action="">
+            <input class="input-ingreso" type="text" placeholder="código">
+            <div class="captcha">CAPTCHA</div>
+            <button class="btn-registro" id="registrate"><a href="registro.html">ENVIAR</a></button>
+        </form>
+    </div>
+</div>
+        <!-- aviso Posible ganador  -->
+        <div class="layer-registro-exitoso" id="posible-ganador"></div>
+        <div id="posibleganador" class="popup-registro-exitoso">
+            <div class="wrap-felicitaciones">
+
+                <p class="titulo"><p class="ganaste-text">ERES EL POTENCIAL GANADOR DE</p><a class="cerrar-registro-exitoso" id="cerrar-posible-ganador">X</a></p>
+            </div>
+            <p class="monto">$2.000.000</p>
+            <p class="titulo"><p class="ganaste-text">EN CUPONES</p><a class="cerrar-registro-exitoso" id="cerrar-posible-ganador">X</a></p>
+            <div class="linea-vertical"></div>
+            <p class="subtitulo">- Se ha enviado un mensaje al correo que registraste con los pasos a seguir para poder reclamar tu cupón redimible en mercado pago. -
+                Revisa tu bandeja de entrada y también tu casilla de spam.</p> <br>
+            <div class="">
+                
+            </div>
+        </div>
+        <script>
+            var capaPosibleGanador = document.getElementById("posible-ganador");
+            var posibleganador = document.getElementById("posibleganador");
+            var cerrarPosibleGanador = document.getElementById("cerrar-posible-ganador");
+
+
+            capaPosibleGanador.onclick = function ocultar(){
+                posibleganador.style.display = "none";
+                capaPosibleGanador.style.display = "none";
+            }
+
+            cerrarPosibleGanador.onclick = function ocultar(){
+                posibleganador.style.display = "none";
+                capaPosibleGanador.style.display = "none";
+            }
+        </script>
+        <!-- fin aviso Posible ganador  -->
+
+        <!-- aviso NO REGISTRADO -->
+        <div class="layer-registro-exitoso" id="capa-no-valido"></div>
+        <div id="ganastenada" class="popup-registro-exitoso">
+            <p class="titulo">CÓDIGO<br>INVÁLIDO<a class="cerrar-registro-exitoso" id="cerrar-no-valido">X</a></p>
+            <div class="linea-vertical"></div>
+            <p class="subtitulo">Reintenta o ingresa un nuevo código</p>
+            <div class="">
+                
+            </div>
+        </div>
+        <script>
+            var capaGanastenada = document.getElementById("capa-no-valido");
+            var ganastenada = document.getElementById("ganastenada");
+            var cerrarGanastenada = document.getElementById("cerrar-no-valido");
+
+
+            capaGanastenada.onclick = function ocultar(){
+                ganastenada.style.display = "none";
+                capaGanastenada.style.display = "none";
+            }
+
+            cerrarGanastenada.onclick = function ocultar(){
+                ganastenada.style.display = "none";
+                capaGanastenada.style.display = "none";
+            }
+        </script>
+        <!-- fin aviso NO REGISTRADO  -->
+
+
+<!-- script menu -->
+<script>
+
+    document.getElementById("btn-menu").addEventListener("click", desplegarMenu);
+    document.getElementById("btn-cerrar-menu").addEventListener("click", ocultarMenu);
+
+    function desplegarMenu(){
+        document.getElementById("menu").style.display = "block";
+    }
+    function ocultarMenu(){
+        document.getElementById("menu").style.display = "none";
+    }
+
+
+</script>
+</body>
+</html>

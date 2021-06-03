@@ -1,0 +1,255 @@
+
+.registros
+    background-color: black
+    display: flex
+    flex-direction: row
+    align-items: center
+    background-image: url("../img/back-registros.png")
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+    color: white
+    font-size: 21px
+    height: 100vh
+    padding-top: 14vh
+    p.tratamiento
+        width: 20vw
+.registros .box1
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100vw
+    padding: 6% 0
+    .img-quedan
+        width: 59%
+    p
+        font-size: 3.4em
+        margin-bottom: 50px
+        color: #FFDB06
+        font-family: compact
+        font-weight: regular!important
+
+    .back-iniciar-mobile
+        display: none
+    form
+        display: flex
+        flex-direction: column
+        align-items: center
+        ul
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            width: 60vw
+            li, div
+                width: 50%
+            li
+                margin-bottom: 20px
+                width: 50%
+                display: flex
+                justify-content: flex-end
+                align-items: center
+                div
+                    width: 64%
+                span
+                    width: 100%
+            li.buttons
+                width: 100%
+            li.section_break
+                width: 100%
+                text-align: center
+                font-size: 15px
+                font-family: arial
+            li#li_10
+                width: 100%
+                div
+                    width: 100%
+                input
+                    height: 20px
+                    width: 20px
+                label
+                    font-size: 20px
+                    a
+                        color: #00CEFF
+                        text-decoration: none
+                input.button_text
+                    width: auto
+                    height: auto
+                    align-self: flex-end
+            label
+                font-size: 40px
+                line-height: 38px
+                font-family: amsi
+                color: white
+                margin-right: 10px
+                text-align: right
+                a
+                    color: #00CEFF
+                    text-decoration: none
+            input
+                width: 100%
+                font-family: amsi
+                
+                font-size: 1.25em
+                padding: 0 50px
+                
+                height: 50px
+                text-align: center
+                outline: none
+                border-radius: 50px
+                border: none
+                background-color: white
+            input[type=submit]
+                width: auto
+                outline: none
+                border: none
+                cursor: pointer
+                padding: 5px 29px
+                font-family: compact
+                border-radius: 160px
+                font-size: 1.3em
+                background: #9b000a
+                color: white
+                background: linear-gradient(0deg, #9b000a 18%, #de0411 81%)
+        .input-ingreso
+            font-family: amsi
+            margin-bottom: 12px
+            font-size: 1.5em
+            padding: 0 50px
+            padding-bottom: 10px
+            height: 50px
+            text-align: center
+            outline: none
+            border-radius: 50px
+            border: none
+            background-color: white
+        .captcha
+            background-color: white
+            color: grey
+            padding: 25px 80px
+            margin-bottom: 25px
+        .btn-ingreso
+            font-family: compact
+            padding: 6px 44px
+            font-size: 1.8em
+            margin-bottom: 25px
+            outline: none
+            border: none
+            border-radius: 33px
+            background-color: white
+            cursor: pointer
+            color: #DE0613
+    .div-linea
+        border: 2px solid white
+        border-radius: 5
+        width: 4px
+        height: 25px
+        margin-bottom: 18px
+    .btn-registro
+        color: white
+        padding: 30px 60px
+        outline: none
+        border: none
+        cursor: pointer
+        padding: 5px 29px
+        font-family: compact
+        border-radius: 160px
+        font-size: 1.3em
+        background: rgb(155,0,10)
+        background: linear-gradient(0deg, rgba(155,0,10,1) 18%, rgba(222,4,17,1) 81%)
+    .btn-registro:hover
+        color: #FFDB06
+
+
+
+@media screen and ( min-width: 1648px)
+    .registros
+        height: auto
+        .box1
+            .div-linea
+                height: 28px
+
+@media screen and ( max-width: 1318px)
+    .registros
+        height: auto
+        font-size: 15px
+@media screen and ( max-width: 1168px)
+    .registros
+        font-size: 12px
+        padding-top: 5vh
+        .box1
+            form
+                .btn-ingreso
+                    padding-bottom: 0px
+                ul
+                    label
+                        font-size: 25px
+                    input[type=submit]
+                        font-size: 1.8rem
+@media screen and ( max-width: 987px)
+    .registros
+        height: auto
+        font-size: 11px
+        padding-top: 15vh
+        .box1
+            padding-top: 2%
+            width: 100vw
+            .div-linea
+                height: 35px
+
+            form
+                ul
+                    width: 90vw
+                    justify-content: center
+                    li
+                        width: 100%
+                    li#li_10
+                        width: 100%
+                        display: flex
+                        flex-direction: column
+                        div
+                            margin-bottom: 14px
+
+@media screen and ( max-width: 647px)
+    .registros
+        background-size: 195px 219px
+        background-position: -20px 442px
+        background-image: url("../img/mascara.png")
+        .box1
+            padding-top: 6vh
+            width: 100vw
+            .back-iniciar-mobile
+                width: 100%
+                display: block
+            p
+                font-size: 28px
+                margin-bottom: 15px
+            form
+                .input-ingreso
+                    height: 37px
+                    padding: 0 30px
+                    padding-bottom: 4px
+                .btn-ingreso
+                    height: 37px
+                ul
+                    label
+                        line-height: 20px
+                    li
+                        margin-bottom: 9px
+                    input
+                        font-size: 1.5em
+                        height: 40px
+                        padding: 0 19px
+            .div-linea
+                margin-bottom: 20px
+            .btn-registro
+                font-size: 1.9em
+
+
+@media screen and ( max-width: 500px)
+    .registros
+        background-size: 0
+        background-position: -20px 452px
+        padding-top: 7vh
+        .box1
+            .img-quedan
+                width: 70%

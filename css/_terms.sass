@@ -1,0 +1,85 @@
+.terminos, .faq
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    position: relative
+    background-color: #FFDB06
+    padding: 130px 0
+    .img-separador
+        position: absolute
+        width: 100%
+        top: -2px
+    .titulo
+        font-weight: normal
+        font-family: impact
+        font-size: 38px
+        margin-bottom: 15px        
+
+    .wrap-texto
+        width: 70%
+        border-left: 7px solid red
+        border-right: 7px solid red
+        border-radius: 35px
+        .estilo
+            font-size: 22px
+            height: 500px
+            overflow: auto
+            border: 1px solid black
+            border-left: 7px solid black
+            border-right: 7px solid black
+            border-radius: 30px
+            padding: 50px 60px
+            background-color: white
+
+    ::-webkit-scrollbar 
+        width: 13px
+        padding: 50px
+            
+    ::-webkit-scrollbar-track 
+        background: white
+        margin: 50px
+            
+
+    ::-webkit-scrollbar-thumb 
+        background: black
+        margin: 10px
+        border-radius: 10px
+
+    ::-webkit-scrollbar-thumb:hover 
+        background: lightgrey
+
+.faq
+    background-color: #de0613
+    .titulo
+        color: white
+        margin-top: 70px
+        font-weight: normal
+    .img-separador
+        transform: rotate(180deg)
+    .wrap-texto
+        border-left: 7px solid #FFDB06
+        border-right: 7px solid #FFDB06
+        .estilo
+            border-left: 7px solid black
+            border-right: 7px solid black
+
+@media screen and ( max-width: 680px)
+    .terminos, .faq
+        padding: 75px 0
+        .titulo
+            font-size: 20px
+            font-weight: normal
+        .wrap-texto
+            width: 90%
+            .estilo
+                font-size: 18px
+                height: 500px
+                padding: 30px 20px
+    .faq
+        .titulo
+            margin-top: 30px!important
+            font-weight: normal!important
+
+
+

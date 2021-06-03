@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+<div class="header">
+    <span class="btn-menu" id="btn-menu"></span>
+    <span class="icon-mask"></span>
+    <nav>
+        <ul class="menu" id="menu">
+            <h3 class="el-botin">EL BOTÍN<br><span class="monto-menu">MÁS BUSCADO</span></h3>
+            <li><img class="" src="../img/autoriza.png" alt=""></li>
+            <li><img class="logo-nav" src="../img/margarita-detodito.png" alt=""></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#home">¿CÓMO PARTICIPAR?</a></li>
+            <li><a href="#home">MIS CÓDIGOS</a></li>
+            <li><a href="#home">GANADORES</a></li>
+            <li><a href="#term">TÉRMINOS Y CONDICIONES</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#faq">PREGUNTAS FRECUENTES</a></li>
+            <span class="btn-cerrar-menu" id="btn-cerrar-menu">X</span>
+            <li><img class="" src="../img/coljuegos.png" alt=""></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="iniciar">
+    <div class="box2">
+        
+    </div>
+    <div class="box1">
+        <img class="back-iniciar-mobile" src="../img/back-iniciar-mobile.png" alt="">
+        
+        <img class="img-quedan delay1" src="../img/quedan.png" alt="">
+        <h1 class="delay2">BIENVENIDO</h1>
+        <form action="" class="delay3">
+            <input class="input-ingreso" type="text" placeholder="e-mail registrado">
+            <div class="captcha">CAPTCHA</div>
+            <input class="btn-ingreso" type="submit" value="INGRESAR">
+        </form>
+        <div class="div-linea delay4"></div>
+        <button class="btn-registro delay4" id="registrate"><a href="registro.html">REGISTRATE</a></button>
+    </div>
+</div>
+
+
+
+        <!-- aviso NO REGISTRADO -->
+        <div class="layer-registro-exitoso" id="capa-no-valido"></div>
+        <div id="ganastenada" class="popup-registro-exitoso">
+            <p class="titulo">EMAIL<br>NO REGISTRADO<a class="cerrar-registro-exitoso" id="cerrar-no-valido">X</a></p>
+            <div class="linea-vertical"></div>
+            <p class="subtitulo">Reintenta o registrate</p>
+            <div class="">
+                
+            </div>
+        </div>
+        <script>
+            var capaGanastenada = document.getElementById("capa-no-valido");
+            var ganastenada = document.getElementById("ganastenada");
+            var cerrarGanastenada = document.getElementById("cerrar-no-valido");
+
+
+            capaGanastenada.onclick = function ocultar(){
+                ganastenada.style.display = "none";
+                capaGanastenada.style.display = "none";
+            }
+
+            cerrarGanastenada.onclick = function ocultar(){
+                ganastenada.style.display = "none";
+                capaGanastenada.style.display = "none";
+            }
+        </script>
+        <!-- fin aviso NO REGISTRADO  -->
+
+
+<!-- script menu -->
+<script>
+
+    document.getElementById("btn-menu").addEventListener("click", desplegarMenu);
+    document.getElementById("btn-cerrar-menu").addEventListener("click", ocultarMenu);
+
+    function desplegarMenu(){
+        document.getElementById("menu").style.display = "block";
+    }
+    function ocultarMenu(){
+        document.getElementById("menu").style.display = "none";
+    }
+
+
+</script>
+</body>
+</html>
