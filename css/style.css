@@ -88,6 +88,14 @@ body {
   font-size: 21px;
   height: 100vh;
   padding-top: 13vh; }
+  .iniciar > p {
+    position: absolute;
+    bottom: 2vh;
+    font-family: arial;
+    font-size: 18px;
+    margin-left: 19vw; }
+    .iniciar > p a {
+      color: #00CEFF; }
 
 .iniciar .box1 {
   display: flex;
