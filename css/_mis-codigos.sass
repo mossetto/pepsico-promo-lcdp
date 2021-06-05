@@ -87,6 +87,39 @@
         flex-direction: column
         justify-content: center
         align-items: center
+        div
+            display: flex
+            justify-content: center
+            align-items: center
+            label
+                width: 200px
+                height: auto
+                border: 1px solid red
+                background-size: contain
+                background-position: center
+                background-repeat: no-repeat
+                padding: 11%
+                display: flex
+                justify-content: center
+                align-items: center
+                font-family: compact
+                font-size: 1.8em
+                cursor: pointer
+            input
+                opacity: .5
+                
+            input:checked + label
+                color: red
+            input:disabled + label
+                cursor: not-allowed
+
+        div.boton-on
+            label
+                background-image: url("../img/bush-azul.png")
+        div.boton-off
+            label
+                background-image: url("../img/bush-blanco.png")
+
 
 
 @media screen and ( min-width: 1648px)
