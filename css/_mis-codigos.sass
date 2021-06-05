@@ -12,7 +12,7 @@
     color: white
     font-size: 21px
     height: 100vh
-    padding-top: 30vh
+    padding-top: 13vh
     p.tratamiento
         width: 20vw
 .mis-codigos
@@ -27,8 +27,14 @@
         p
             font-family: compact
             font-size: 42px
+        p.titulo
+            font-family: compact
+            font-size: 68px
         table
-            width: 100%
+            display: block
+            overflow: auto
+            height: 320px
+            width: 594px
             font-family: arial
             thead
                 th
@@ -37,6 +43,10 @@
                     font-size: 37px
             tbody
                 text-align: center
+                td
+                    padding: 5px 0
+                    font-size: 18px
+                    width: 186px
         .back-iniciar-mobile
             display: none
             .btn-ingreso
@@ -81,14 +91,14 @@
 
 @media screen and ( min-width: 1648px)
     .mis-codigos
-        height: auto
+        height: 100vh
         .box1
             .div-linea
                 height: 28px
 
 @media screen and ( max-width: 1318px)
     .mis-codigos
-        height: auto
+        height: 100vh
         font-size: 15px
 @media screen and ( max-width: 1168px)
     .mis-codigos
@@ -171,3 +181,9 @@
         .box1
             .img-quedan
                 width: 70%
+
+
+.mis-codigos .box1 table ::-webkit-scrollbar
+    width: 8px
+    background-color: #3fb3e8
+    border-radius: 5px

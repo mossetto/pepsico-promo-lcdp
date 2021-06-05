@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+    <div class="header">
+        <span class="btn-menu" id="btn-menu"></span>
+        <span class="icon-mask"></span>
+        <nav>
+            <ul class="menu" id="menu">
+                <h3 class="el-botin">EL BOTÍN<br><span class="monto-menu">MÁS BUSCADO</span></h3>
+                <li><img class="" src="../img/autoriza.png" alt=""></li>
+                <li><img class="logo-nav" src="../img/margarita-detodito.png" alt=""></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="como-participar.html">¿CÓMO PARTICIPAR?</a></li>
+                <li><a href="mis-codigos.html">MIS CÓDIGOS</a></li>
+                <li><a href="ganadores.html">GANADORES</a></li>
+                <li><a href="terminos.html">TÉRMINOS Y CONDICIONES</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="faq.html">PREGUNTAS FRECUENTES</a></li>
+                <span class="btn-cerrar-menu" id="btn-cerrar-menu">X</span>
+                <li><img class="" src="../img/coljuegos.png" alt=""></li>
+            </ul>
+        </nav>
+    </div>
+
+
+<div class="contacto" id="contacto">
+
+            <!-- aviso mensaje enviado -->
+            <div class="layer-registro-exitoso" id="capa-mensaje-exitoso"></div>
+            <div id="mensajeexitoso" class="popup-registro-exitoso">
+                <p class="titulo">GRACIAS POR CONTACTARTE <br>
+                    CON NOSOTROS<a class="cerrar-registro-exitoso" id="cerrar-mensaje-exitoso">X</a></p>
+                    <div class="linea-vertical"></div>
+                <p class="subtitulo">Pronto te responderemos vía email.</p>
+                <div class="">
+                    
+                </div>
+            </div>
+            <script>
+                var capamensajeExitoso = document.getElementById("capa-mensaje-exitoso");
+                var mensajeExitoso = document.getElementById("mensajeexitoso");
+                var cerrarmensajeExitoso = document.getElementById("cerrar-mensaje-exitoso");
+    
+    
+                capamensajeExitoso.onclick = function ocultar(){
+                    mensajeExitoso.style.display = "none";
+                    capaRegistroExitoso.style.display = "none";
+                }
+    
+                cerrarmensajeExitoso.onclick = function ocultar(){
+                    mensajeExitoso.style.display = "none";
+                    capamensajeExitoso.style.display = "none";
+                }
+            </script>
+            <!-- fin aviso mensaje enviado -->
+
+    <img class="red-black" src="../img/red-black.png" alt="" class="borde">
+    <img src="../img/logolays.png" alt="" class="logo-lays">
+    <div class="wrap-contacto">
+        <h1 class="titulo" >CONTACTANOS</h1>
+        <form action="">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Mensaje"></textarea>
+            <div class="captcha">captcha</div>
+            <div class="estilo-enviar">
+
+                <input class="enviar" type="submit" value="ENVIAR">
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- script menu -->
+<script>
+
+    document.getElementById("btn-menu").addEventListener("click", desplegarMenu);
+    document.getElementById("btn-cerrar-menu").addEventListener("click", ocultarMenu);
+
+    function desplegarMenu(){
+        document.getElementById("menu").style.display = "block";
+    }
+    function ocultarMenu(){
+        document.getElementById("menu").style.display = "none";
+    }
+
+
+</script>
+</body>
+</html>
