@@ -2116,42 +2116,49 @@ body {
   }
 }
 .mis-codigos {
-  border: 2px solid red;
   background-color: black;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  background-image: url("../img/back-registro.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   color: white;
   font-size: 21px;
   height: 100vh;
   padding-top: 13vh;
 }
-.mis-codigos p.tratamiento {
-  width: 20vw;
+.mis-codigos .titulo {
+  font-family: compact;
+  font-size: 68px;
+  color: #F6E01A;
+  margin-bottom: -61px;
+}
+.mis-codigos .wrap-1 {
+  display: flex;
+  flex-direction: row;
+}
+.mis-codigos .wrap-2 {
+  display: flex;
+  flex-direction: row;
+  background-image: url("../img/fondo-puntos.png");
+  background-size: contain;
+  padding: 100px 150px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .mis-codigos {
   justify-content: center;
 }
 .mis-codigos .box1 {
-  border: 2px solid blue;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 50vw;
-  padding: 6% 0;
 }
 .mis-codigos .box1 p {
   font-family: compact;
   font-size: 42px;
-}
-.mis-codigos .box1 p.titulo {
-  font-family: compact;
-  font-size: 68px;
+  color: red;
+  margin-bottom: 20px;
 }
 .mis-codigos .box1 table {
   display: block;
@@ -2159,6 +2166,7 @@ body {
   height: 320px;
   width: 594px;
   font-family: arial;
+  color: black;
 }
 .mis-codigos .box1 table thead th {
   margin-bottom: 30px;
@@ -2172,6 +2180,15 @@ body {
   padding: 5px 0;
   font-size: 18px;
   width: 186px;
+}
+.mis-codigos .box1 table::-webkit-scrollbar-thumb {
+  background-color: #FAFAFA;
+  border-radius: 5px;
+}
+.mis-codigos .box1 table::-webkit-scrollbar {
+  width: 8px;
+  background-color: #9A9A9A;
+  border-radius: 5px;
 }
 .mis-codigos .box1 .back-iniciar-mobile {
   display: none;
@@ -2189,7 +2206,6 @@ body {
   color: #DE0613;
 }
 .mis-codigos .box1 .div-linea {
-  border: 2px solid white;
   border-radius: 5;
   width: 4px;
   height: 25px;
@@ -2212,7 +2228,6 @@ body {
   color: #FFDB06;
 }
 .mis-codigos .box2 {
-  border: 2px solid yellow;
   width: 20vw;
   display: flex;
   flex-direction: column;
@@ -2227,7 +2242,6 @@ body {
 .mis-codigos .box2 div label {
   width: 200px;
   height: auto;
-  border: 1px solid red;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -2240,10 +2254,11 @@ body {
   cursor: pointer;
 }
 .mis-codigos .box2 div input {
-  opacity: 0.5;
+  opacity: 0;
+  position: absolute;
 }
 .mis-codigos .box2 div input:checked + label {
-  color: red;
+  color: yellow;
 }
 .mis-codigos .box2 div input:disabled + label {
   cursor: not-allowed;
@@ -2253,6 +2268,17 @@ body {
 }
 .mis-codigos .box2 div.boton-off label {
   background-image: url("../img/bush-blanco.png");
+}
+.mis-codigos .box2 button {
+  background-image: url("../img/canjear-mp.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  background-color: transparent;
+  border: none;
 }
 
 @media screen and (min-width: 1648px) {
@@ -2290,6 +2316,15 @@ body {
     font-size: 11px;
     padding-top: 15vh;
   }
+  .mis-codigos .titulo {
+    margin-bottom: 0;
+  }
+  .mis-codigos .wrap-2 {
+    padding: 0 150px;
+    flex-direction: column;
+    background-color: #dbd9df;
+    background-image: none;
+  }
   .mis-codigos .box1 {
     padding-top: 2%;
     width: 100vw;
@@ -2311,6 +2346,20 @@ body {
   }
   .mis-codigos .box1 form ul li#li_10 div {
     margin-bottom: 14px;
+  }
+  .mis-codigos .box2 {
+    width: auto;
+    padding-bottom: 2%;
+  }
+  .mis-codigos .box2 div label {
+    width: 170px;
+  }
+  .mis-codigos .box2 form {
+    width: 50%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 647px) {
