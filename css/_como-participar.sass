@@ -1,0 +1,122 @@
+.como-participar
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    position: relative
+    background-color: black
+    // padding: 130px 0
+    margin: auto auto
+    padding-top: 20vh
+    padding-bottom: 5vh
+    width: 90vw
+    .titulo
+        font-family: compact
+        font-size: 60px
+        color: yellow
+        margin-bottom: 15px        
+    .wrap-principal
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        .caja1, .caja2, .caja3
+            width: 30vw
+            // border: 2px solid white
+            // height: 33vh
+        .caja4
+            width: 40vw
+            // border: 2px solid white
+            // height: 33vh
+        .caja1, .caja2, .caja3, .caja4
+            display: flex
+            justify-content: space-between
+            align-items: center
+            flex-direction: column
+            a
+                text-align: center
+                transition: transform .3s
+            a:hover
+                transform: scale(1.1)
+        .caja4
+            p.todos
+                background-image: url(/img/bush-rojo.png)
+                background-size: contain
+                background-repeat: no-repeat
+                background-position: center
+                color: white
+                padding: 13px 86px
+                font-family: compact
+                font-size: 34px
+            p.leyenda-terminos
+                font-family: arial
+                font-size: 18px
+                color: white
+                a
+                    color: #00CEFF
+        .caja1 img, .caja2 img, .caja3 img, .caja4 img
+            width: 70%
+            margin-bottom: 30px
+        img.img-instrucciones
+            width: 45%
+
+            
+.moneda-left, .moneda-right
+    height: 179px
+    position: fixed
+    bottom: 0px
+.moneda-left
+    left: 0px
+.moneda-right
+    right: 0px
+    transform: scaleX(-1)
+
+@media screen and ( max-width: 1200px)
+    .como-participar
+        padding: 114px 0
+        .wrap-principal
+            .caja1, .caja2, .caja3
+                width: 55vw
+                // height: 33vh
+            .caja4
+                width: 55vw
+                // height: 33vh
+            .caja1 img, .caja2 img, .caja3 img
+                width: 75%
+            .caja4 img, .caja5 img
+                width: 100%
+
+    .moneda-left, .moneda-right
+        height: 124px
+        
+
+
+@media screen and ( max-width: 680px)
+    .como-participar
+        padding: 75px 0
+        .titulo
+            font-size: 33px
+            font-weight: normal
+        .wrap-principal
+            .caja4 p.todos
+                font-size: 19px
+                padding: 9px 34px
+
+@media screen and ( max-width: 500px)
+    .como-participar
+        padding: 114px 0
+        .wrap-principal
+            .caja1, .caja2, .caja3, .caja4
+                width: 90vw
+
+            .caja1 img, .caja2 img, .caja3 img
+                width: 75%
+            .caja4 img, .caja5 img
+                width: 100%
+            .caja4
+                font-size: 19px
+                padding: 9px 34px
+    .moneda-left, .moneda-right
+        height: 124px
+        bottom: -36px
+        

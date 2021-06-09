@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+    <div class="header">
+        <span class="btn-menu" id="btn-menu"></span>
+        <span class="icon-mask"></span>
+        <nav>
+            <ul class="menu" id="menu">
+                <h3 class="el-botin">EL BOTÍN<br><span class="monto-menu">MÁS BUSCADO</span></h3>
+                <li><img class="" src="../img/autoriza.png" alt=""></li>
+                <li><img class="logo-nav" src="../img/margarita-detodito.png" alt=""></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="como-participar.html">¿CÓMO PARTICIPAR?</a></li>
+                <li><a href="mis-codigos.html">MIS CÓDIGOS</a></li>
+                <li><a href="ganadores.html">GANADORES</a></li>
+                <li><a href="terminos.html">TÉRMINOS Y CONDICIONES</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="faq.html">PREGUNTAS FRECUENTES</a></li>
+                <span class="btn-cerrar-menu" id="btn-cerrar-menu">X</span>
+                <li><img class="" src="../img/coljuegos.png" alt=""></li>
+            </ul>
+        </nav>
+    </div>
+
+
+<div class="como-participar">
+<p class="titulo" >¿CÓMO PARTICIPAR?</p>
+    <div class="wrap-principal">
+        <div class="caja1">
+            <img src="/img/uno.png" alt="">
+            <img src="/img/dos.png" alt="">
+        </div>
+        <div class="caja2">
+            <img class="img-instrucciones" src="/img/instruccion.png" alt="">
+        </div>
+        <div class="caja3">
+            <img src="/img/tres.png" alt="">
+            <img src="/img/cuatro.png" alt="">
+            <a href="faq.html"><img src="/img/conoce.png" alt=""></a>
+        </div>
+        <div class="caja4">
+            <img src="/img/cinco.png" alt="">
+            <p class="todos">TODOS LOS PAQUETES TIENEN PREMIO</p>
+            <P class="leyenda-terminos">Aplican <a href="terminos.html">términos y condiciones</a></P>
+        </div>
+
+    </div>
+</div>
+<img class="moneda-left" src="/img/coin.png" alt="">
+<img class="moneda-right" src="/img/coin.png" alt="">
+
+
+
+<!-- script menu -->
+<script>
+
+    document.getElementById("btn-menu").addEventListener("click", desplegarMenu);
+    document.getElementById("btn-cerrar-menu").addEventListener("click", ocultarMenu);
+
+    function desplegarMenu(){
+        document.getElementById("menu").style.display = "block";
+    }
+    function ocultarMenu(){
+        document.getElementById("menu").style.display = "none";
+    }
+
+
+</script>
+</body>
+</html>

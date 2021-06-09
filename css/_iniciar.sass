@@ -4,28 +4,21 @@
     display: flex
     flex-direction: row
     align-items: center
-    background-image: url("../img/back-iniciar.png")
-    background-size: 100vw
-    background-position: -34px 80px
-    background-repeat: no-repeat
+
     color: white
     font-size: 21px
     height: 100vh
     padding-top: 13vh
-    > p
-        position: absolute
-        bottom: 2vh
-        font-family: arial
-        font-size: 18px
-        margin-left: 19vw
-        a
-            color: #00CEFF
 .iniciar .box1
     display: flex
     flex-direction: column
     align-items: center
-    width: 60vw
+    width: 55vw
     padding: 6% 0
+    background-image: url("../img/mascara.png")
+    background-size: 20%
+    background-position: 79% 87%
+    background-repeat: no-repeat
     .img-quedan
         width: 59%
     h1
@@ -33,6 +26,7 @@
         margin-bottom: 50px
         color: #FFDB06
         font-family: amsi
+
 
     .back-iniciar-mobile
         display: none
@@ -97,8 +91,15 @@
     display: flex
     flex-direction: column
     align-items: center
-    width: 40vw
-
+    width: 45vw
+    .imagen-inicial
+        width: 103%
+    > p
+        font-family: arial
+        font-size: 18px
+        margin-left: 110px
+        a
+            color: #00CEFF
 @media screen and ( min-width: 1648px)
     .iniciar
         height: auto
@@ -129,20 +130,22 @@
                 height: 35px
 
         .box2
-            width: 32vw
+            width: 61vw
+            p
+                font-size: 13px
+                margin-left: 61px
 
 @media screen and ( max-width: 647px)
     .iniciar
-        background-size: 195px 219px
-        background-position: -20px 442px
-        background-image: url("../img/mascara.png")
         .box1
             width: 100vw
+            background-size: 37%
+            background-position: 104% 93%
             .back-iniciar-mobile
                 width: 100%
                 display: block
             h1
-                font-size: 28px
+                font-size: 52px
                 margin-bottom: 15px
             form
                 .input-ingreso
@@ -160,6 +163,8 @@
 
         .box2
             width: 0vw
+            p
+                display: none
 @media screen and ( max-width: 500px)
     .iniciar
         background-size: 170px 190px
@@ -167,4 +172,4 @@
         padding-top: 7vh
         .box1
             .img-quedan
-                width: 70%
+                width: 85%

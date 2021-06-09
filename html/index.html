@@ -31,8 +31,9 @@
 </div>
 
 <div class="iniciar">
-    <p>Aplican <a href="#">términos y condiciones</a></p>
     <div class="box2">
+        <img class="imagen-inicial" src="../img/imagen-inicial.png" alt="">
+        <p>Aplican <a href="terminos.html">términos y condiciones</a></p>
     </div>
     <div class="box1">
         <img class="back-iniciar-mobile" src="../img/back-iniciar-mobile.png" alt="">
@@ -47,37 +48,17 @@
         <div class="div-linea delay4"></div>
         <button class="btn-registro delay4" id="registrate"><a href="registro.html">REGISTRATE</a></button>
     </div>
+        <!-- Pop Up Te has Correo no registrado  -->
+        <div class="pop-wrap fondo-red">
+            <span class="cerrar" onclick="cerrar(i = this)"></span>
+              <div class="pop-seccion-1">
+                <p class="texto-pop-1">EMAIL NO<br>REGISTRADO</p>
+                <p class="texto-pop-4">- INGRESA TU DIRECCIÓN CORRECTAMENTE<br> -</p>
+              </div>
+              <script type="application/javascript">function cerrar(i){i.parentNode.style.display= 'none';}</script>
+          </div>
+        <!-- FIN Pop Up Te has Correo no registrado  -->
 </div>
-
-
-
-        <!-- aviso NO REGISTRADO -->
-        <div class="layer-registro-exitoso" id="capa-no-valido"></div>
-        <div id="ganastenada" class="popup-registro-exitoso">
-            <p class="titulo">EMAIL<br>NO REGISTRADO<a class="cerrar-registro-exitoso" id="cerrar-no-valido">X</a></p>
-            <div class="linea-vertical"></div>
-            <p class="subtitulo">Reintenta o registrate</p>
-            <div class="">
-                
-            </div>
-        </div>
-        <script>
-            var capaGanastenada = document.getElementById("capa-no-valido");
-            var ganastenada = document.getElementById("ganastenada");
-            var cerrarGanastenada = document.getElementById("cerrar-no-valido");
-
-
-            capaGanastenada.onclick = function ocultar(){
-                ganastenada.style.display = "none";
-                capaGanastenada.style.display = "none";
-            }
-
-            cerrarGanastenada.onclick = function ocultar(){
-                ganastenada.style.display = "none";
-                capaGanastenada.style.display = "none";
-            }
-        </script>
-        <!-- fin aviso NO REGISTRADO  -->
 
 
 <!-- script menu -->

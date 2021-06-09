@@ -43,68 +43,44 @@
             <button class="btn-registro" id="registrate"><a href="registro.html">ENVIAR</a></button>
         </form>
     </div>
+        <!-- Pop Up Codigo Inválido  -->
+        <div class="pop-wrap fondo-red">
+            <span class="cerrar" onclick="cerrar(i = this)"></span>
+              <div class="pop-seccion-1">
+                <p class="texto-pop-1">CÓDIGO<br>INVÁLIDO</p>
+                <p class="texto-pop-4">- CÓDIGO INCORRECTO O YA INGRESADO<br> INTENTA NUEVAMENTE -</p>
+              </div>
+              <script type="application/javascript">function cerrar(i){i.parentNode.style.display= 'none';}</script>
+          </div>
+        <!-- FIN Pop Up Codigo Inválido  -->
+            <!-- Pop Up potencial ganador de 2.000.000  -->
+    <div class="pop-wrap potencial">
+        <span class="cerrar" onclick="cerrar(i = this)"></span>
+          <div class="pop-seccion-1">
+            <p class="texto-pop-1 eres">ERES EL POTENCIAL GANADOR DE</p>
+            <p class="texto-pop-2">$2.000.000</p>
+            <p class="texto-pop-1">EN CUPONES</p>
+          </div>
+          <div class="pop-seccion-2">
+            <p class="texto-pop-5">DESCARGA E IMPRIME EL ACTA, COMPLETA LOS DATOS, FIRMALO y TÓMALE UNA FOTO.<br>
+                <button class="btn-registro" id="descargar-acta"><a href="registro.html">DESCARGAR ACTA</a></button> <br>
+                EN LAS PRÓXIMAS 48HS TE ESTAREMOS ENVIANDO UN E-MAIL CON LOS SIGUIENTES PASOS A SEGUIR.
+            </p>
+          </div>
+          <script type="application/javascript">function cerrar(i){i.parentNode.style.display= 'none';}</script>
+      </div>
+    <!-- FIN Pop Up potencial ganador de 2.000.000  -->
+    <!-- Pop Up Te has registrado Exitosamente  -->
+    <div class="pop-wrap fondo-blue">
+        <span class="cerrar" onclick="cerrar(i = this)"></span>
+          <div class="pop-seccion-1">
+            <p class="texto-pop-1">TE HAS REGISTRADO<br>EXITOSAMENTE</p>
+            <p class="texto-pop-4">- TE ENVIAREMOS UN CORREO <br> DE CONFIRMACIÓN - </p>
+          </div>
+          <script type="application/javascript">function cerrar(i){i.parentNode.style.display= 'none';}</script>
+      </div>
+    <!-- FIN Pop Up Te has registrado Exitosamente  -->
 </div>
-        <!-- aviso Posible ganador  -->
-        <div class="layer-registro-exitoso" id="posible-ganador"></div>
-        <div id="posibleganador" class="popup-registro-exitoso">
-            <div class="wrap-felicitaciones">
-
-                <p class="titulo"><p class="ganaste-text">ERES EL POTENCIAL GANADOR DE</p><a class="cerrar-registro-exitoso" id="cerrar-posible-ganador">X</a></p>
-            </div>
-            <p class="monto">$2.000.000</p>
-            <p class="titulo"><p class="ganaste-text">EN CUPONES</p><a class="cerrar-registro-exitoso" id="cerrar-posible-ganador">X</a></p>
-            <div class="linea-vertical"></div>
-            <p class="subtitulo">- Se ha enviado un mensaje al correo que registraste con los pasos a seguir para poder reclamar tu cupón redimible en mercado pago. -
-                Revisa tu bandeja de entrada y también tu casilla de spam.</p> <br>
-            <div class="">
-                
-            </div>
-        </div>
-        <script>
-            var capaPosibleGanador = document.getElementById("posible-ganador");
-            var posibleganador = document.getElementById("posibleganador");
-            var cerrarPosibleGanador = document.getElementById("cerrar-posible-ganador");
-
-
-            capaPosibleGanador.onclick = function ocultar(){
-                posibleganador.style.display = "none";
-                capaPosibleGanador.style.display = "none";
-            }
-
-            cerrarPosibleGanador.onclick = function ocultar(){
-                posibleganador.style.display = "none";
-                capaPosibleGanador.style.display = "none";
-            }
-        </script>
-        <!-- fin aviso Posible ganador  -->
-
-        <!-- aviso NO REGISTRADO -->
-        <div class="layer-registro-exitoso" id="capa-no-valido"></div>
-        <div id="ganastenada" class="popup-registro-exitoso">
-            <p class="titulo">CÓDIGO<br>INVÁLIDO<a class="cerrar-registro-exitoso" id="cerrar-no-valido">X</a></p>
-            <div class="linea-vertical"></div>
-            <p class="subtitulo">Reintenta o ingresa un nuevo código</p>
-            <div class="">
-                
-            </div>
-        </div>
-        <script>
-            var capaGanastenada = document.getElementById("capa-no-valido");
-            var ganastenada = document.getElementById("ganastenada");
-            var cerrarGanastenada = document.getElementById("cerrar-no-valido");
-
-
-            capaGanastenada.onclick = function ocultar(){
-                ganastenada.style.display = "none";
-                capaGanastenada.style.display = "none";
-            }
-
-            cerrarGanastenada.onclick = function ocultar(){
-                ganastenada.style.display = "none";
-                capaGanastenada.style.display = "none";
-            }
-        </script>
-        <!-- fin aviso NO REGISTRADO  -->
 
 
 <!-- script menu -->
